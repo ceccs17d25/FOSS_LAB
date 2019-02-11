@@ -1,0 +1,199 @@
+Script started on Monday 11 February 2019 03:00:08 PM IST
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat abc>abc[C[C[C,[K.txt
+7
+5
+7
+4
+8
+5
+^Z
+[1]+  Stopped                 cat > abc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat >abc.txt[1Pabc.txt
+7
+5
+7
+4
+8
+5
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat abc.txt>abc.txtgrep abc.txt[1Pcat[C[C[C[C[C[C[C[Cls[Kcat abc.txt[K[K[K[K[K[K[K[K[K[K[Ksort -n abc.txt
+4
+5
+5
+7
+7
+8
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort -n abc.txt[K[K[K[K[K[K[K[Kk7 abc.txt
+4
+5
+5
+7
+7
+8
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort -nk7 abc.txt[C[1@r
+8
+7
+7
+5
+5
+4
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cut[K[K[Kgrep "[K'^-' abc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ grep '^-' abc.txt[1@sort -rnk7[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[2P abc.txt[4Pcat[C[C[C[C[C[C[C[C
+7
+5
+7
+4
+8
+5
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat >bc.txt
+h
+a
+r
+i^Z
+[2]+  Stopped                 cat > bc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt
+join: abc.txt:4: is not sorted: 4
+join: bc.txt:2: is not sorted: a
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort -n abc.txt
+4
+5
+5
+7
+7
+8
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort bc.txt
+a
+h
+r
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort bc.txt-n abc.txtjoin abc.txt bc.txt
+join: abc.txt:4: is not sorted: 4
+join: bc.txt:2: is not sorted: a
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ abc >a[K[K[K[K[K[Kcat >[K[K[K[K[Ksort -c abc.txt
+sort: abc.txt:2: disorder: 5
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ 
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat >abc.txt
+54 
+4
+3
+23 
+2
+^Z
+[3]+  Stopped                 cat > abc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat >abc.txt
+6
+5
+4
+3
+2
+2
+^Z
+[4]+  Stopped                 cat > abc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat >abc.txt
+6
+5
+4
+3
+2
+1
+^Z
+[5]+  Stopped                 cat > abc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat >abc.txtsort -c abc.txt
+sort: abc.txt:2: disorder: 5
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort -c abc.txt[1P abc.txtn abc.txt
+1
+2
+3
+4
+5
+6
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort -n abc.txtc[C[C[C[C[C[C[C[C
+sort: abc.txt:2: disorder: 5
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort -c abc.txtn[C[C[C[C[C[C[C[Cc[C[C[C[C[C[C[C[C[3Pcat >abc.txtsort -c abc.txt
+sort: abc.txt:2: disorder: 5
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sorty[K -n abc.txt
+1
+2
+3
+4
+5
+6
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort -n abc.txtc[C[C[C[C[C[C[C[Cn[C[C[C[C[C[C[C[C[Ksort -n abc.txt[1Pbc.txt
+a
+h
+r
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt
+join: abc.txt:3: is not sorted: 4
+join: bc.txt:2: is not sorted: a
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ a[Kcat> abc
+c^Z
+[6]+  Stopped                 cat > abc
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat>  abc.txt
+1
+2
+3^Z
+[7]+  Stopped                 cat > abc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat>  abc.txt[1Pbc.txt
+4
+5
+6
+^Z
+[8]+  Stopped                 cat > bc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat>  bc.txtabc.txt[K[K[K[K[K[K[K[K[K[K[K[K[Kjoin abc.txt bc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat> abc.txt 
+1
+2
+3
+4
+5
+^Z
+[9]+  Stopped                 cat > abc.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ cat> abc.txt [K[K[K[K[K[K[K[K[K[K[K[K[Ksort -n s[Kabc.txt
+1
+2
+3
+4
+5
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ sort -n abc.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kjoin abc.txt bc.txt
+4
+5
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksort -n abc.txt[2Pcat> abc.txt [K[K[K[K[K[K[K[K[K[K[K[K[Ksort -c a[K[K abcx[K.txt
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt j2[K]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt j22[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-j2
+ 1 4
+ 1 5
+ 1 6
+ 2 4
+ 2 5
+ 2 6
+ 3 4
+ 3 5
+ 3 6
+ 4 4
+ 4 5
+ 4 6
+ 5 4
+ 5 5
+ 5 6
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ 
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ o[Kping
+Usage: ping [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ if [Kdown
+ifdown: no interface(s) specified
+ifdown: Use --help for help
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ who
+\s4d2     tty7         2019-02-11 14:40 (:0)
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ \[Kwho -a
+           system boot  2019-02-11 14:40
+           run-level 5  2019-02-11 14:40
+LOGIN      tty1         2019-02-11 14:40              1342 id=tty1
+s4d2     + tty7         2019-02-11 14:40 00:50        1685 (:0)
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ last lpp
+
+wtmp begins Mon Feb  4 17:34:54 2019
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ [K]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ last ipp
+
+wtmp begins Mon Feb  4 17:34:54 2019
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ [K]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ exit
+exit
+There are stopped job
