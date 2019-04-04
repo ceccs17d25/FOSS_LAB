@@ -1,0 +1,54 @@
+Script started on Thursday 04 April 2019 10:59:47 AM IST
+]0;clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower: ~[01;32mclab1@clab1-HP-Compaq-dc7900-Convertible-Minitower[00m:[01;34m~[00m$ rsync -zvh cs17d25@192.168 
+.0.30:/home/ifconfig.txt /home/lab[K[K[KLAB![K1CLAB1[C[C[C[C/
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d25@192.168.0.30's password: 
+rsync: link_stat "/home/ifconfig.txt" failed: No such file or directory (2)
+
+sent 8 bytes  received 85 bytes  7.44 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1655) [Receiver=3.1.1]
+rsync: [Receiver] write error: Broken pipe (32)
+]0;clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower: ~[01;32mclab1@clab1-HP-Compaq-dc7900-Convertible-Minitower[00m:[01;34m~[00m$ rsync -zvh cs17d25@192.168.
+.0.30:/home/ifconfig.txt /home/CLAB1/[1@c[1@s[1@1[1@7[1@d[1@2[1@5[1@/
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d25@192.168.0.30's password: 
+rsync: mkdir "/home/CLAB1" failed: Permission denied (13)
+rsync error: error in file IO (code 11) at main.c(674) [Receiver=3.1.1]
+]0;clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower: ~[01;32mclab1@clab1-HP-Compaq-dc7900-Convertible-Minitower[00m:[01;34m~[00m
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ rsync -zvh cs17d13@192.168.0.30:/home/cs17d13/me.txt /home/cec/
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d25@192.168.0.30's password: 
+ifconfig.txt
+
+sent 49 bytes  received 78 bytes  19.54 bytes/sec
+total size is 19  speedup is 0.15
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ rsync -zvh ifconfig.txt cs17d13@192.168.0.30:/home/cs17d13
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d25@192.168.0.30's password: 
+ifconfig.txt
+
+sent 78 bytes  received 41 bytes  26.44 bytes/sec
+total size is 19  speedup is 0.16
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ 
+
+$ exit
+exit
+
+Script done on Thursday 04 April 2019 11:05:53 AM IST
