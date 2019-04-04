@@ -1,0 +1,696 @@
+Script started, file is ceccs17d25.04.04.19.txt
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ ssh cs17d25@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d25@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+278 packages can be updated.
+0 updates are security updates.
+
+Last login: Thu Apr  4 09:56:05 2019 from 192.168.0.78
+$ scp<11.02.19.txt> <cs17d25@192.168.0.30>
+-sh: 1: Syntax error: redirection unexpected
+$ du  
+4	./.cache
+40	./.config/plank/dock1/launchers
+44	./.config/plank/dock1
+48	./.config/plank
+52	./.config
+980	.
+$ ls
+04.02.2019.txt	cec17d25.17.03.19.txt	   examples.desktop  os3.jpeg  os6.jpeg
+11.02.19.txt	cec17d25.18.03.19cgpa.txt  ifconfig.txt      os4.jpeg  os7.jpeg
+25.03.19.txt	ceccs17d25.11.03.19.txt    os1.jpeg	     os5.jpeg  os.jpeg
+$ cat ifconfig
+cat: ifconfig: No such file or directory
+$ cat ifconfig.txt
+
+  
+Script started on Monday 25 March 2019 09:32:44 AM IST
+cec-lab2@CC2-28:~/Desktop$ sudo su
+[sudo] password for cec-lab2: 
+root@CC2-24:/home/cec-lab2/Desktop# ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:27857 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9578 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:14715629 (14.7 MB)  TX bytes:1082861 (1.0 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:532 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:532 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:158936 (158.9 KB)  TX bytes:158936 (158.9 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.3
+PING 192.168.25.3 (192.168.25.3) 56(84) bytes of data.
+64 bytes from 192.168.25.3: icmp_seq=1 ttl=64 time=0.397 ms
+64 bytes from 192.168.25.3: icmp_seq=2 ttl=64 time=0.348 ms
+64 bytes from 192.168.25.3: icmp_seq=3 ttl=64 time=0.459 ms
+64 bytes from 192.168.25.3: icmp_seq=4 ttl=64 time=0.348 ms
+64 bytes from 192.168.25.3: icmp_seq=5 ttl=64 time=0.419 ms
+64 bytes from 192.168.25.3: icmp_seq=6 ttl=64 time=0.296 ms
+64 bytes from 192.168.25.3: icmp_seq=7 ttl=64 time=0.359 ms
+64 bytes from 192.168.25.3: icmp_seq=8 ttl=64 time=0.235 ms
+64 bytes from 192.168.25.3: icmp_seq=9 ttl=64 time=0.349 ms
+^Z
+[1]+  Stopped                 ping 192.168.25.3
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.255  Mask:255.255.255.0
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:27886 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9607 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:14720032 (14.7 MB)  TX bytes:1087189 (1.0 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:532 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:532 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:158936 (158.9 KB)  TX bytes:158936 (158.9 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig -a
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.255  Mask:255.255.255.0
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:27888 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9608 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:14720226 (14.7 MB)  TX bytes:1087276 (1.0 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:532 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:532 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:158936 (158.9 KB)  TX bytes:158936 (158.9 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 netmask 255.255.255.244
+SIOCSIFNETMASK: Invalid argument
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 netmask 255.255.255.
+255.255.255.: Host name lookup failure
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig netmask 255.255.255.4
+SIOCSIFADDR: No such device
+netmask: ERROR while getting interface flags: No such device
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4 netmask 255.255.2 
+55.04
+SIOCSIFNETMASK: Invalid argument
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4 netmask 255.255.25
+55.0
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4 netmask 255.255.25
+55.5
+SIOCSIFNETMASK: Invalid argument
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4 netmask 255.255.25
+55.1
+SIOCSIFNETMASK: Invalid argument
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4 netmask 255.255.25
+55.244
+SIOCSIFNETMASK: Invalid argument
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4 netmask 255.255.25
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4 netmask 255.255.2ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.255  Mask:255.255.255.0
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:27993 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9666 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:14737074 (14.7 MB)  TX bytes:1100370 (1.1 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:536 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:536 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:159220 (159.2 KB)  TX bytes:159220 (159.2 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 netmask 255.255.255.224
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 192.168.25.4 netmask 255.255.2
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.31  Mask:255.255.255.224
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:28010 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9701 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:14738913 (14.7 MB)  TX bytes:1106857 (1.1 MB)
+
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.31  Mask:255.255.255.224
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:28135 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9707 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:14766510 (14.7 MB)  TX bytes:1107399 (1.1 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:544 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:544 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:159748 (159.7 KB)  TX bytes:159748 (159.7 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.5
+PING 192.168.25.5 (192.168.25.5) 56(84) bytes of data.
+From 192.168.25.4 icmp_seq=1 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=2 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=3 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=4 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=5 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=6 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=7 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=8 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=9 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=10 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=11 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=12 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=13 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=14 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=15 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=16 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=17 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=18 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=19 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=20 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=21 Destination Host Unreachable
+
+^Z
+[2]+  Stopped                 ping 192.168.25.5
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.5
+PING 192.168.25.5 (192.168.25.5) 56(84) bytes of data.
+From 192.168.25.4 icmp_seq=1 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=2 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=3 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=4 Destination Host Unreachable
+^Z
+[3]+  Stopped                 ping 192.168.25.5
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.2
+PING 192.168.25.2 (192.168.25.2) 56(84) bytes of data.
+64 bytes from 192.168.25.2: icmp_seq=1 ttl=64 time=0.394 ms
+64 bytes from 192.168.25.2: icmp_seq=2 ttl=64 time=0.196 ms
+64 bytes from 192.168.25.2: icmp_seq=3 ttl=64 time=0.193 ms
+64 bytes from 192.168.25.2: icmp_seq=4 ttl=64 time=0.242 ms
+64 bytes from 192.168.25.2: icmp_seq=5 ttl=64 time=0.225 ms
+64 bytes from 192.168.25.2: icmp_seq=6 ttl=64 time=0.149 ms
+64 bytes from 192.168.25.2: icmp_seq=7 ttl=64 time=0.201 ms
+^Z
+[4]+  Stopped                 ping 192.168.25.2
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.5\
+> ^[
+ssh: Could not resolve hostname 192.168.25.5\033: Name or service not known
+
+Couldn't read packet: Connection reset by peer
+
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.5
+ssh: connect to host 192.168.25.5 port 22: No route to host
+
+Couldn't read packet: Connection reset by peer
+
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.2
+PING 192.168.25.2 (192.168.25.2) 56(84) bytes of data.
+64 bytes from 192.168.25.2: icmp_seq=1 ttl=64 time=0.209 ms
+64 bytes from 192.168.25.2: icmp_seq=2 ttl=64 time=0.249 ms
+64 bytes from 192.168.25.2: icmp_seq=3 ttl=64 time=0.151 ms
+64 bytes from 192.168.25.2: icmp_seq=4 ttl=64 time=0.295 ms
+64 bytes from 192.168.25.2: icmp_seq=5 ttl=64 time=0.146 ms
+64 bytes from 192.168.25.2: icmp_seq=6 ttl=64 time=0.148 ms
+^Z
+[5]+  Stopped                 ping 192.168.25.2
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.5
+ssh: connect to host 192.168.25.5 port 22: No route to host
+
+Couldn't read packet: Connection reset by peer
+
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.2
+The authenticity of host '192.168.25.2 (192.168.25.2)' can't be established.
+RSA key fingerprint is 0e:ac:0a:9c:54:2c:a0:8a:c4:c7:19:a3:44:ca:7f:53.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.25.2' (RSA) to the list of known hosts.
+
+root@192.168.25.2's password: 
+Connected to 192.168.25.2.
+sftp> ls
+25.03.19             Desktop              Server.java~         UNIX or linux os     a.c~                 
+a.out                a.txt                a.txt~               abc                  abc.tct              
+abc.txt              binary.c             c.sh~                cec                  cecs4dcnew           
+classlist~           efg.txt              employ.c             employ.c~            employ.txt           
+employee.c           employee.c~          etc                  file.txt             file1.txt            
+linux.txt            man ssh              msgq.c~              n.sh~                output.txt           
+output1.txt          output2.txt          pipe.c               pipe.c~              receive.java~        
+redirection.txt      sconf.sh             sconf.sh~            sharedmem.c~         sharedmem0.c~        
+sharedmem1.c~        sheba                signal.c             sort.txt             sys.sh~              
+temp.txt             typescript           usr                  yum-2.4.3            yum-3.4.3            
+sftp> pwd
+Remote working directory: /root
+sftp> cd Desktop
+sftp> ls
+Python-2.7.15-22_Oso.x86_64.rpm    aa                                 alphiealeena                       
+binary.c                           binary.c~                          bubblesort.c~                      
+poly.c~                            python2.4-2.4-1pydotorg.i386.rpm   python3-3.6.5-1.fc28.i686.rpm      
+yum-2.0.7                          yum-4.4.3.tar.gz                   
+sftp> ls
+Python-2.7.15-22_Oso.x86_64.rpm    aa                                 alphiealeena                       
+binary.c                           binary.c~                          bubblesort.c~                      
+poly.c~                            python2.4-2.4-1pydotorg.i386.rpm   python3-3.6.5-1.fc28.i686.rpm      
+yum-2.0.7                          yum-4.4.3.tar.gz                   
+sftp> rm abc.txt
+Removing /root/Desktop/abc.txt
+Couldn't delete file: No such file or directory
+
+sftp> ls
+Python-2.7.15-22_Oso.x86_64.rpm    aa                                 alphiealeena                       
+binary.c                           binary.c~                          bubblesort.c~                      
+poly.c~                            python2.4-2.4-1pydotorg.i386.rpm   python3-3.6.5-1.fc28.i686.rpm      
+yum-2.0.7                          yum-4.4.3.tar.gz                   
+sftp> pwd
+Remote working directory: /root/Desktop
+sftp> cd ..
+sftp> ls
+25.03.19             Desktop              Server.java~         UNIX or linux os     a.c~                 
+a.out                a.txt                a.txt~               abc                  abc.tct              
+abc.txt              binary.c             c.sh~                cec                  cecs4dcnew           
+classlist~           efg.txt              employ.c             employ.c~            employ.txt           
+employee.c           employee.c~          etc                  file.txt             file1.txt            
+linux.txt            man ssh              msgq.c~              n.sh~                output.txt           
+output1.txt          output2.txt          pipe.c               pipe.c~              receive.java~        
+redirection.txt      sconf.sh             sconf.sh~            sharedmem.c~         sharedmem0.c~        
+sharedmem1.c~        sheba                signal.c             sort.txt             sys.sh~              
+temp.txt             typescript           usr                  yum-2.4.3            yum-3.4.3            
+sftp> rm abc.txt
+Removing /root/abc.txt
+sftp> ls
+25.03.19             Desktop              Server.java~         UNIX or linux os     a.c~                 
+a.out                a.txt                a.txt~               abc                  abc.tct              
+binary.c             c.sh~                cec                  cecs4dcnew           classlist~           
+efg.txt              employ.c             employ.c~            employ.txt           employee.c           
+employee.c~          etc                  file.txt             file1.txt            linux.txt            
+man ssh              msgq.c~              n.sh~                output.txt           output1.txt          
+output2.txt          pipe.c               pipe.c~              receive.java~        redirection.txt      
+sconf.sh             sconf.sh~            sharedmem.c~         sharedmem0.c~        sharedmem1.c~        
+sheba                signal.c             sort.txt             sys.sh~              temp.txt             
+typescript           usr                  yum-2.4.3            yum-3.4.3            
+sftp> 
+sftp> ls
+25.03.19             Desktop              Server.java~         UNIX or linux os     a.c~                 
+a.out                a.txt                a.txt~               abc                  abc.tct              
+binary.c             c.sh~                cec                  cecs4dcnew           classlist~           
+efg.txt              employ.c             employ.c~            employ.txt           employee.c           
+employee.c~          etc                  file.txt             file1.txt            linux.txt            
+man ssh              msgq.c~              n.sh~                output.txt           output1.txt          
+output2.txt          pipe.c               pipe.c~              receive.java~        redirection.txt      
+sconf.sh             sconf.sh~            sharedmem.c~         sharedmem0.c~        sharedmem1.c~        
+sheba                signal.c             sort.txt             sys.sh~              temp.txt             
+typescript           usr                  yum-2.4.3            yum-3.4.3            
+sftp> get a.txt
+Fetching /root/a.txt to a.txt
+
+/root/a.txt                                                               0%    0     0.0KB/s   --:-- ETA
+/root/a.txt                                                             100%   10     0.0KB/s   00:00    
+sftp> put /home/cec-lab2/ceccs17d02/insort.c
+Uploading /home/cec-lab2/ceccs17d02/insort.c to /root/insort.c
+
+/home/cec-lab2/ceccs17d02/insort.c                                        0%    0     0.0KB/s   --:-- ETA
+/home/cec-lab2/ceccs17d02/insort.c                                      100%  512     0.5KB/s   00:00    
+sftp> put /home/cec-lab2/ceccs17d02/insort.c:/home/root/Desktop
+stat /home/cec-lab2/ceccs17d02/insort.c:/home/root/Desktop: No such file or directory
+
+sftp> pwd
+Remote working directory: /root
+sftp> cd ..
+sftp> pwd
+Remote working directory: /
+sftp> ls
+anju         bin          boot         dev          etc          home         initrd       lib          
+lost+found   media        misc         mnt          opt          proc         root         s4c          
+s4c1new      s4c2         sbin         selinux      srv          sys          tftpboot     tmp          
+usr          var          
+sftp> cd root
+sftp> ls
+25.03.19             Desktop              Server.java~         UNIX or linux os     a.c~                 
+a.out                a.txt                a.txt~               abc                  abc.tct              
+binary.c             c.sh~                cec                  cecs4dcnew           classlist~           
+efg.txt              employ.c             employ.c~            employ.txt           employee.c           
+employee.c~          etc                  file.txt             file1.txt            insort.c             
+linux.txt            man ssh              msgq.c~              n.sh~                output.txt           
+output1.txt          output2.txt          pipe.c               pipe.c~              receive.java~        
+redirection.txt      sconf.sh             sconf.sh~            sharedmem.c~         sharedmem0.c~        
+sharedmem1.c~        sheba                signal.c             sort.txt             sys.sh~              
+temp.txt             typescript           usr                  yum-2.4.3            yum-3.4.3            
+sftp> ls
+25.03.19             Desktop              Server.java~         UNIX or linux os     a.c~                 
+a.out                a.txt                a.txt~               abc                  abc.tct              
+binary.c             c.sh~                cec                  cecs4dcnew           classlist~           
+efg.txt              employ.c             employ.c~            employ.txt           employee.c           
+employee.c~          etc                  file.txt             file1.txt            insort.c             
+linux.txt            man ssh              msgq.c~              n.sh~                output.txt           
+output1.txt          output2.txt          pipe.c               pipe.c~              receive.java~        
+redirection.txt      sconf.sh             sconf.sh~            sharedmem.c~         sharedmem0.c~        
+sharedmem1.c~        sheba                signal.c             sort.txt             sys.sh~              
+temp.txt             typescript           usr                  yum-2.4.3            yum-3.4.3            
+sftp> cd Desktop
+sftp> pwd
+Remote working directory: /root/Desktop
+sftp> lpwd
+Local working directory: /home/cec-lab2/Desktop
+sftp> ls
+Python-2.7.15-22_Oso.x86_64.rpm    aa                                 alphiealeena                       
+binary.c                           binary.c~                          bubblesort.c~                      
+poly.c~                            python2.4-2.4-1pydotorg.i386.rpm   python3-3.6.5-1.fc28.i686.rpm      
+yum-2.0.7                          yum-4.4.3.tar.gz                   
+sftp> lpwd
+Local working directory: /home/cec-lab2/Desktop
+sftp> ls
+Python-2.7.15-22_Oso.x86_64.rpm    aa                                 alphiealeena                       
+binary.c                           binary.c~                          bubblesort.c~                      
+poly.c~                            python2.4-2.4-1pydotorg.i386.rpm   python3-3.6.5-1.fc28.i686.rpm      
+yum-2.0.7                          yum-4.4.3.tar.gz                   
+sftp> get binary.c
+Fetching /root/Desktop/binary.c to binary.c
+
+/root/Desktop/binary.c                                                    0%    0     0.0KB/s   --:-- ETA
+/root/Desktop/binary.c                                                  100%    1     0.0KB/s   00:00    
+sftp> lpwd
+Local working directory: /home/cec-lab2/Desktop
+sftp> pwd
+Remote working directory: /root/Desktop
+sftp> put a.txt
+Uploading a.txt to /root/Desktop/a.txt
+
+a.txt                                                                     0%    0     0.0KB/s   --:-- ETA
+a.txt                                                                   100%   10     0.0KB/s   00:00    
+sftp> bye
+root@CC2-28:/home/cec-lab2/Desktop# sftp s4d1@192.168.25.3
+ssh: connect to host 192.168.25.3 port 22: No route to host
+
+Couldn't read packet: Connection reset by peer
+
+root@CC2-28:/home/cec-lab2/Desktop# sftp s4d1@192.168.25.03
+ssh: connect to host 192.168.25.03 port 22: No route to host
+
+Couldn't read packet: Connection reset by peer
+
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.31  Mask:255.255.255.224
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1070448 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9999 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:77559579 (77.5 MB)  TX bytes:1134647 (1.1 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:612 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:612 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:166116 (166.1 KB)  TX bytes:166116 (166.1 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.4
+PING 192.168.25.4 (192.168.25.4) 56(84) bytes of data.
+64 bytes from 192.168.25.4: icmp_seq=1 ttl=64 time=0.012 ms
+64 bytes from 192.168.25.4: icmp_seq=2 ttl=64 time=0.036 ms
+64 bytes from 192.168.25.4: icmp_seq=3 ttl=64 time=0.069 ms
+64 bytes from 192.168.25.4: icmp_seq=4 ttl=64 time=0.063 ms
+64 bytes from 192.168.25.4: icmp_seq=5 ttl=64 time=0.015 ms
+^Z
+[6]+  Stopped                 ping 192.168.25.4
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.31  Mask:255.255.255.224
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:9965441 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:22641 errors:0 dropped:329 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1517788628 (1.5 GB)  TX bytes:1665947 (1.6 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:622 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:622 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:166956 (166.9 KB)  TX bytes:166956 (166.9 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig eth0 netmask 255.255.255.0
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.255  Mask:255.255.255.0
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:11088042 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:28012 errors:0 dropped:423 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1709086069 (1.7 GB)  TX bytes:1891529 (1.8 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:622 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:622 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:166956 (166.9 KB)  TX bytes:166956 (166.9 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.3
+ssh: connect to host 192.168.25.3 port 22: No route to host
+
+Couldn't read packet: Connection reset by peer
+
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.3 -p 23
+usage: sftp [-1246aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher]
+          [-D sftp_server_path] [-F ssh_config] [-i identity_file] [-l limit]
+          [-o ssh_option] [-P port] [-R num_requests] [-S program]
+          [-s subsystem | sftp_server] host
+       sftp [user@]host[:file ...]
+       sftp [user@]host[:dir[/]]
+       sftp -b batchfile [user@]host
+root@CC2-28:/home/cec-lab2/Desktop# sftp s4d1@192.168.25.3 -p 23
+usage: sftp [-1246aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher]
+          [-D sftp_server_path] [-F ssh_config] [-i identity_file] [-l limit]
+          [-o ssh_option] [-P port] [-R num_requests] [-S program]
+          [-s subsystem | sftp_server] host
+       sftp [user@]host[:file ...]
+       sftp [user@]host[:dir[/]]
+       sftp -b batchfile [user@]host
+root@CC2-28:/home/cec-lab2/Desktop# sftp s4d1@192.168.25.3
+bye
+
+^Z
+[7]+  Stopped                 sftp s4d1@192.168.25.3
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.255  Mask:255.255.255.0
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:14020452 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:28936 errors:0 dropped:517 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2084974918 (2.0 GB)  TX bytes:1933294 (1.9 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:624 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:624 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:167132 (167.1 KB)  TX bytes:167132 (167.1 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# sftp s4d1@192.168.25.5
+ssh: connect to host 192.168.25.5 port 22: No route to host
+
+Couldn't read packet: Connection reset by peer
+
+root@CC2-28:/home/cec-lab2/Desktop# sftp s4d1@192.168.25.5 -p 23
+usage: sftp [-1246aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher]
+          [-D sftp_server_path] [-F ssh_config] [-i identity_file] [-l limit]
+          [-o ssh_option] [-P port] [-R num_requests] [-S program]
+          [-s subsystem | sftp_server] host
+       sftp [user@]host[:file ...]
+       sftp [user@]host[:dir[/]]
+       sftp -b batchfile [user@]host
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.5 -p 23
+usage: sftp [-1246aCfpqrv] [-B buffer_size] [-b batchfile] [-c cipher]
+          [-D sftp_server_path] [-F ssh_config] [-i identity_file] [-l limit]
+          [-o ssh_option] [-P port] [-R num_requests] [-S program]
+          [-s subsystem | sftp_server] host
+       sftp [user@]host[:file ...]
+       sftp [user@]host[:dir[/]]
+       sftp -b batchfile [user@]host
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.5 -p23
+^Z
+[8]+  Stopped                 sftp root@192.168.25.5 -p23
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.5
+^Z
+[9]+  Stopped                 sftp root@192.168.25.5
+root@CC2-28:/home/cec-lab2/Desktop# ssh s4d1@192.168.25.5
+^Z
+[10]+  Stopped                 ssh s4d1@192.168.25.5
+root@CC2-28:/home/cec-lab2/Desktop# sftp CEC-LAB1@192.168.25.3
+^Z
+[11]+  Stopped                 sftp CEC-LAB1@192.168.25.3
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.3
+^Z  
+[12]+  Stopped                 sftp root@192.168.25.3
+root@CC2-28:/home/cec-lab2/Desktop# sftp root@192.168.25.2
+ssh: connect to host 192.168.25.2 port 22: No route to host
+
+Couldn't read packet: Connection reset by peer
+
+root@CC2-28:/home/cec-lab2/Desktop# ifconfig
+eth0      Link encap:Ethernet  HWaddr 38:d5:47:b8:da:9e  
+          inet addr:192.168.25.4  Bcast:192.168.25.255  Mask:255.255.255.0
+          inet6 addr: fe80::3ad5:47ff:feb8:da9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:17207181 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:224591 errors:0 dropped:705 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2590737383 (2.5 GB)  TX bytes:10152265 (10.1 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:629 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:629 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:167564 (167.5 KB)  TX bytes:167564 (167.5 KB)
+
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.4
+PING 192.168.25.4 (192.168.25.4) 56(84) bytes of data.
+64 bytes from 192.168.25.4: icmp_seq=1 ttl=64 time=0.011 ms
+64 bytes from 192.168.25.4: icmp_seq=2 ttl=64 time=0.013 ms
+64 bytes from 192.168.25.4: icmp_seq=3 ttl=64 time=0.015 ms
+64 bytes from 192.168.25.4: icmp_seq=4 ttl=64 time=0.020 ms
+^Z
+[13]+  Stopped                 ping 192.168.25.4
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.6
+PING 192.168.25.6 (192.168.25.6) 56(84) bytes of data.
+^Z
+[14]+  Stopped                 ping 192.168.25.6
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.2
+PING 192.168.25.2 (192.168.25.2) 56(84) bytes of data.
+^Z
+[15]+  Stopped                 ping 192.168.25.2
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.3
+PING 192.168.25.3 (192.168.25.3) 56(84) bytes of data.
+^Z
+[16]+  Stopped                 ping 192.168.25.3
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.5
+PING 192.168.25.5 (192.168.25.5) 56(84) bytes of data.
+^Z
+[17]+  Stopped                 ping 192.168.25.5
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.4
+PING 192.168.25.4 (192.168.25.4) 56(84) bytes of data.
+64 bytes from 192.168.25.4: icmp_seq=1 ttl=64 time=0.012 ms
+64 bytes from 192.168.25.4: icmp_seq=2 ttl=64 time=0.018 ms
+64 bytes from 192.168.25.4: icmp_seq=3 ttl=64 time=0.034 ms
+^Z
+[18]+  Stopped                 ping 192.168.25.4
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.4
+PING 192.168.25.4 (192.168.25.4) 56(84) bytes of data.
+64 bytes from 192.168.25.4: icmp_seq=1 ttl=64 time=0.011 ms
+64 bytes from 192.168.25.4: icmp_seq=2 ttl=64 time=0.016 ms
+64 bytes from 192.168.25.4: icmp_seq=3 ttl=64 time=0.019 ms
+64 bytes from 192.168.25.4: icmp_seq=4 ttl=64 time=0.016 ms
+^Z
+[19]+  Stopped                 ping 192.168.25.4
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.6
+PING 192.168.25.6 (192.168.25.6) 56(84) bytes of data.
+^Z
+[20]+  Stopped                 ping 192.168.25.6
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.5
+PING 192.168.25.5 (192.168.25.5) 56(84) bytes of data.
+^Z
+[21]+  Stopped                 ping 192.168.25.5
+root@CC2-28:/home/cec-lab2/Desktop# ping 192.168.25.3
+PING 192.168.25.3 (192.168.25.3) 56(84) bytes of data.
+From 192.168.25.4 icmp_seq=1 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=2 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=3 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=4 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=5 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=6 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=7 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=8 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=9 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=10 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=11 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=12 Destination Host Unreachable
+^Z
+[22]+  Stopped                 ping 192.168.25.3
+root@CC2-24:/home/cec-lab2/Desktop# ping 192.168.25.@
+ping: unknown host 192.168.25.@
+root@CC2-24:/home/cec-lab2/Desktop# ping 192.168.25.2
+PING 192.168.25.2 (192.168.25.2) 56(84) bytes of data.
+From 192.168.25.4 icmp_seq=1 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=2 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=3 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=4 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=5 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=6 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=7 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=8 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=9 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=10 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=11 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=12 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=13 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=14 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=15 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=16 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=17 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=18 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=19 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=20 Destination Host Unreachable
+From 192.168.25.4 icmp_seq=21 Destination Host Unreachable
+^Z
+[23]+  Stopped                 ping 192.168.25.2
+root@CC2-24:/home/cec-lab2/Desktop# exit
+There are stopped jobs.
+root@CC2-24:/home/cec-lab2/Desktop# exit
+cec-lab2@CC2-24:~/Desktop$ exit
+
+Script done on Monday 25 March 2019 10:30:56 AM IST
+
+
+$ pwd
+/home/cs17d25
+$ ^Z
+$ exit
+Connection to 192.168.0.30 closed.
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ 
+
