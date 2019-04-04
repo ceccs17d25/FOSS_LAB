@@ -8,7 +8,7 @@ cs17d25@192.168.0.30's password:
 rsync: mkdir "/home/CLAB1" failed: Permission denied (13)
 rsync error: error in file IO (code 11) at main.c(674) [Receiver=3.1.1]
 ]0;clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower: ~[01;32mclab1@clab1-HP-Compaq-dc7900-Convertible-Minitower[00m:[01;34m~[00m
-clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ rsync -zvh cs17d13@192.168.0.30:/home/cs17d25/ifconfig.txt /home/cec/
+clab1@clab1-HP-Compaq-dc7900-Convertible-Minitower:~$ rsync -zvh cs17d25@192.168.0.30:/home/cs17d25/ifconfig.txt /home/cec/
 .
               |
 .  .    . .-. | .-..-. .--.--. .-.
