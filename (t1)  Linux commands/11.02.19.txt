@@ -156,7 +156,11 @@ c^Z
 4
 5
 ]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksort -n abc.txt[2Pcat> abc.txt [K[K[K[K[K[K[K[K[K[K[K[K[Ksort -c a[K[K abcx[K.txt
-]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt j2[K]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt j22[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-j2
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt j2
+[K]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ join abc.txt bc.txt j2
+2
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-j2
+
  1 4
  1 5
  1 6
@@ -191,9 +195,11 @@ s4d2     + tty7         2019-02-11 14:40 00:50        1685 (:0)
 ]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ last lpp
 
 wtmp begins Mon Feb  4 17:34:54 2019
-]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ [K]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ last ipp
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ 
+[K]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ last ipp
 
 wtmp begins Mon Feb  4 17:34:54 2019
-]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ [K]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ exit
+]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ 
+[K]0;s4d2@ceclab1-Veriton-Series: ~[01;32ms4d2@ceclab1-Veriton-Series[00m:[01;34m~[00m$ exit
 exit
 There are stopped job
