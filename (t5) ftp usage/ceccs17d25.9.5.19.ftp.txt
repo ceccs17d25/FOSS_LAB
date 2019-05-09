@@ -20,14 +20,19 @@ os1.jpeg                                os3.jpeg
 os4.jpeg                                os5.jpeg                                
 os6.jpeg                                os7.jpeg                                
 sftp> rm [K[Kcat 11,[K.02.19.txt
-Invalid command.
+Invalid command.
+
 sftp> cat 11.02.19.txt [1@<1[P1[1@>1
-Invalid command.
+Invalid command.
+
 sftp> get 11.2.19.txt
-File "/home/cs17d25/11.2.19.txt" not found.
+File "/home/cs17d25/11.2.19.txt" not found.
+
 sftp> get 11.2.19.txt[1@02
 Fetching /home/cs17d25/11.02.19.txt to 11.02.19.txt
-/home/cs17d25/11.02.19.txt                      0%    0     0.0KB/s   --:-- ETA/home/cs17d25/11.02.19.txt                    100% 8192   536.2KB/s   00:00    
+
+/home/cs17d25/11.02.19.txt                      0%    0     0.0KB/s   --:-- ETA
+/home/cs17d25/11.02.19.txt                    100% 8192   536.2KB/s   00:00    
 sftp> lls
 \11.02.19.txt		   Firefox_wallpaper.png  pal.py
 11.4.19.txt		   ftp1.png		  perl
@@ -64,7 +69,8 @@ cs17d45@192.168.0.30       lamp.txt               [01;34mstudent_details[0m
 [01;34mDocuments[0m                  [01;34mMusic[0m                  [01;34mVideos[0m
 [01;34mDownloads[0m                  [01;34mnew[0m
 examples.desktop           [01;34mnew1[0m
-]0;tpc@CC2-27: ~[01;32mtpc@CC2-27[00m:[01;34m~[00m$ ft[K[Ksftp [K[K[K[K[Klssftp cs17d25@192.168.0.30[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pgedit php.phpsftp cs17d25@192.168.0.30
+]0;tpc@CC2-27: ~[01;32mtpc@CC2-27[00m:[01;34m~[00m$ ft[K[Ksftp [K[K[K[K[Klssftp cs17d25@192.168.0.30
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pgedit php.phpsftp cs17d25@192.168.0.30
 .
               |
 .  .    . .-. | .-..-. .--.--. .-.
