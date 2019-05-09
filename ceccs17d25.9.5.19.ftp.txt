@@ -1,0 +1,76 @@
+Script started on 2019-05-09 10:38:04+0530
+]0;tpc@CC2-27: ~[01;32mtpc@CC2-27[00m:[01;34m~[00m$ gedit php.php[K[K[K[K[K[K[K[K[K[K[K[K[Ksftp 1[Kcs17d25@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d25@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> ls
+04.02.2019.txt                          11.02.19.txt                            
+11.4.19.txt                             25.03.19.txt                            
+cec17d25.17.03.19.txt                   cec17d25.18.03.19cgpa.txt               
+cec17d25.29.04.19.txt                   ceccs17d25.11.03.19.txt                 
+examples.desktop                        ftp.png                                 
+ftp1.png                                ftp_server.txt                          
+http.png                                ifconfig.txt                            
+index.html                              os.jpeg                                 
+os1.jpeg                                os3.jpeg                                
+os4.jpeg                                os5.jpeg                                
+os6.jpeg                                os7.jpeg                                
+sftp> rm [K[Kcat 11,[K.02.19.txt
+Invalid command.
+sftp> cat 11.02.19.txt [1@<1[P1[1@>1
+Invalid command.
+sftp> get 11.2.19.txt
+File "/home/cs17d25/11.2.19.txt" not found.
+sftp> get 11.2.19.txt[1@02
+Fetching /home/cs17d25/11.02.19.txt to 11.02.19.txt
+/home/cs17d25/11.02.19.txt                      0%    0     0.0KB/s   --:-- ETA/home/cs17d25/11.02.19.txt                    100% 8192   536.2KB/s   00:00    
+sftp> lls
+\11.02.19.txt		   Firefox_wallpaper.png  pal.py
+11.4.19.txt		   ftp1.png		  perl
+add.pl			   ftp.png		  php.php
+cec17d25.29.04.19.1.txt    ftp_server.txt	  Pictures
+cec17d25.29.04.19.txt	   GPA_calc		  prn
+ceccs17d25.9.05.19.txt	   gpa.txt		  Public
+ceccs17d25.9.5.19.ftp.txt  http_server.txt	  SFTP
+ceccs17d25.9.5.19.txt	   lamp.sh		  sk.txt
+cs17d45@192.168.0.30	   lamp.txt		  student_details
+cs232-master		   linux-4.17-rc2	  task8.txt
+Desktop			   linux-5.0.9.tar.xz	  Templates
+Documents		   Music		  Videos
+Downloads		   new
+examples.desktop	   new1
+sftp> \[Klpwd
+Local working directory: /home/tpc
+sftp> rm examplw[Kes.desktop
+Removing /home/cs17d25/examples.desktop
+sftp> 
+[1]+  Stopped                 sftp cs17d25@192.168.0.30
+]0;tpc@CC2-27: ~[01;32mtpc@CC2-27[00m:[01;34m~[00m$ ls
+11.02.19.txt               [0m[01;35mFirefox_wallpaper.png[0m  pal.py
+11.4.19.txt                [01;35mftp1.png[0m               [01;34mperl[0m
+add.pl                     [01;35mftp.png[0m                php.php
+cec17d25.29.04.19.1.txt    ftp_server.txt         [01;34mPictures[0m
+cec17d25.29.04.19.txt      [01;34mGPA_calc[0m               [34;42mprn[0m
+ceccs17d25.9.05.19.txt     gpa.txt                [01;34mPublic[0m
+ceccs17d25.9.5.19.ftp.txt  http_server.txt        SFTP
+ceccs17d25.9.5.19.txt      [01;32mlamp.sh[0m                [01;34msk.txt[0m
+cs17d45@192.168.0.30       lamp.txt               [01;34mstudent_details[0m
+[01;34mcs232-master[0m               [01;34mlinux-4.17-rc2[0m         task8.txt
+[01;34mDesktop[0m                    [01;31mlinux-5.0.9.tar.xz[0m     [01;34mTemplates[0m
+[01;34mDocuments[0m                  [01;34mMusic[0m                  [01;34mVideos[0m
+[01;34mDownloads[0m                  [01;34mnew[0m
+examples.desktop           [01;34mnew1[0m
+]0;tpc@CC2-27: ~[01;32mtpc@CC2-27[00m:[01;34m~[00m$ ft[K[Ksftp [K[K[K[K[Klssftp cs17d25@192.168.0.30[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pgedit php.phpsftp cs17d25@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d25@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> put ceccs17d25.9.5.19.ftp.txt 
+Uploa
