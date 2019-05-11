@@ -1,0 +1,15 @@
+sreeharis@haridevs:~$ sh kill.sh
+
+checking for run-away process ...
+cpu load--- 075
+TOP PROCESSES---- PID %CPU COMMAND 10907 8.3 /usr/bin/mandb 10505 8.2 /opt/google/chrome/chrome 8992 7.6 /opt/sublime_text/plugin_host 24839 5.6 /usr/bin/gedit 8584 3.6 /usr/bin/gnome-shell 9891 3.1 /opt/google/chrome/chrome
+kill.sh: 17: kill: Operation not permitted
+
+system overloading!
+load average is at 075
+Active processes...
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+sreehar+  8452  1.8  2.7 1086000 107856 tty2   Rl+  21:57   0:14 /usr/lib/xorg/X
+sreehar+  9953  0.0  0.0      0     0 tty2     R+   22:00   0:00 [chrome]
+root     10837  0.0  0.0      0     0 ?        D    22:09   0:00 [kworker/u8:3]
+sreehar+ 30638  0.0  0.0  46772  3480 pts/1    R+   22:10   0:00 ps aux r
